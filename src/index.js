@@ -1,5 +1,5 @@
-import { wizard } from './wizard';
-import { barbarian } from './barbarian';
+import { wizard } from '../wizard';
+import { barbarian } from '../barbarian';
 
 // const wizard = require('./wizard');
 // const barbarian = require ('./barbarian');
