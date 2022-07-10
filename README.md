@@ -12,4 +12,6 @@ simple webpack5 setUp example
 9. fallback mode for the main.js generation is 'production' i.e. file will be generated in the minified mode.
 10. So we have module bundling with 0 configuration with webpack 5.
 11. we can check the bundle that's formed to see what webpack has generated => is used which could not run on older browsers without using of babel, that's interesting to note.
-12. 
+12. Now if we are going to modify or make any changes in the project we have to rebuild using 'npx webpack'.
+13. We can then add a "build script" as well in the package json to run our local webpack.
+    
