@@ -8,8 +8,9 @@
  * to tell how to behave.
  */
 const path = require('path');
+const mode = process.env['NODE_ENV'] === 'production' ? 'production' : 'development';
 module.exports = {
-    mode: 'development',// todo by default this is production & it's rule level property 
+    mode: mode,//'development',// todo by default this is production & it's rule level property 
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
@@ -31,7 +32,9 @@ module.exports = {
     devServer: { // todo : 
         // contentBase:'./dist' // todo contentbase is not support have to use static 
         static: {
-            directory: path.join(__dirname, 'public')
-        }
+            directory: path.join(__dirname, 'public') // todo now the content will be served from public directory
+        },
+        port: 3000, // todo this will let application run from port 3000
+        
     }
 }

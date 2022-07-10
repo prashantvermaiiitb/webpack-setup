@@ -30,5 +30,8 @@ simple webpack5 setUp example
 27. Running webpack dev server will be having auto changes detect mode. This will have hot module relaoding.
 28. Next we can add entry / output points in the webpack config.js so that we can define the formation and serving of the bundle.js
 29. After adding entry / outpu we have to rerun the build so that folders are created and then we can run webpack devserver
-30. 
+30. Reading the environment for the build from the variable may be production or development.
+31. in Serve mode webpack does not write bundle code to files, it will be serving from the memory. so in use-case where we have done npm run build-prod > followed by npm start then it will be serving the code from the memory depending upon where there is a flag that have been defined.
+32. Updating the default port from 8080 to somthing else will need to update the PORT in webpack.config.js
+33. 
     

@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start":"webpack serve",
+    "start-dev":"webpack serve --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "build-prod": "NODE_ENV=production webpack",
+    "build-dev": "NODE_ENV=development webpack"
   },
   "keywords": [],
   "author": "",
