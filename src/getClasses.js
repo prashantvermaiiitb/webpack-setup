@@ -5,6 +5,7 @@ import { wizard } from './wizard';
 const {barbarian} = require('./barbarian');
 
 export const getClasses = () => {
+    console.log('~ inside getClasses() was called hot module reloading...');
     console.log(wizard);
     console.log(barbarian);
 }

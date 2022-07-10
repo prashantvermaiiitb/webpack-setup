@@ -7,8 +7,14 @@
  * since you will be doing more settings or maintenance for the babel we will have .babelrc file
  * to tell how to behave.
  */
+const path = require('path');
 module.exports = {
     mode: 'development',// todo by default this is production & it's rule level property 
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public') // todo : this is being done so that on different OS this works properly by being differnt.
+    },
     module: {
         rules: [
             {
@@ -21,5 +27,11 @@ module.exports = {
             }
         ]
     },
-    devtool: 'source-map' // todo : this will be adding main.js.map files in the code
+    devtool: 'source-map', // todo : this will be adding main.js.map files in the code
+    devServer: { // todo : 
+        // contentBase:'./dist' // todo contentbase is not support have to use static 
+        static: {
+            directory: path.join(__dirname, 'public')
+        }
+    }
 }

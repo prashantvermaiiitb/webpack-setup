@@ -25,4 +25,10 @@ simple webpack5 setUp example
 22. Mode : is used for defining what should be done with main.js that's generated.
 23. After adding sourcemap in the devtool: we are getting information about from where the code is coming from. This will take us to actual file as in source code. Alongwith main.js this will be sending main.js.map, to show the mapping of code from the bundled file to actual functions written in the code.
 24. This source map will help in trouble shoot in the dev mode.
+25. Webpack is coming with "watch" mode, this will help in getting webpack keep on looking out for changes.
+26. for creating a development server, we will be putting {devServer :{}} property with contentBase to tell from where to pick the code from.
+27. Running webpack dev server will be having auto changes detect mode. This will have hot module relaoding.
+28. Next we can add entry / output points in the webpack config.js so that we can define the formation and serving of the bundle.js
+29. After adding entry / outpu we have to rerun the build so that folders are created and then we can run webpack devserver
+30. 
     

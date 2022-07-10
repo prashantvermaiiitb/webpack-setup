@@ -1,1 +1,1 @@
-export const wizard = 'ravylinn';
+export const wizard = 'ravylinn-786';
