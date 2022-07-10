@@ -14,4 +14,7 @@ simple webpack5 setUp example
 11. we can check the bundle that's formed to see what webpack has generated => is used which could not run on older browsers without using of babel, that's interesting to note.
 12. Now if we are going to modify or make any changes in the project we have to rebuild using 'npx webpack'.
 13. We can then add a "build script" as well in the package json to run our local webpack.
+14. Important !!: till now require and import are working w/o babel, since webpack is able to do the transpiling for them.
+15. Next we are adding babel so as to support the generated main.js to run on the older browsers as well.
+16. 
     
