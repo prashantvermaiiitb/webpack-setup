@@ -8,6 +8,7 @@
  * to tell how to behave.
  */
 module.exports = {
+    mode: 'development',// todo by default this is production & it's rule level property 
     module: {
         rules: [
             {
@@ -19,5 +20,6 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    devtool: 'source-map' // todo : this will be adding main.js.map files in the code
 }

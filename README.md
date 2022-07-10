@@ -21,5 +21,8 @@ simple webpack5 setUp example
 18. @babel/preset-env : latest browser support, backward compatibility, reasonal js usage on web
 19. babel-loader : is going to handle operations like CSS loader inclusion 
 20. after the inclusion of the webpack in local if we do npm run build then output in the dist/main will be little bit different. Now this is not having any arrow function and also this is now compatible with old browsers.
-21. 
+21. Compiling is converting into some other language while tanspiling is converting the same language into another version of the same language which will have backward compatibility.
+22. Mode : is used for defining what should be done with main.js that's generated.
+23. After adding sourcemap in the devtool: we are getting information about from where the code is coming from. This will take us to actual file as in source code. Alongwith main.js this will be sending main.js.map, to show the mapping of code from the bundled file to actual functions written in the code.
+24. This source map will help in trouble shoot in the dev mode.
     
