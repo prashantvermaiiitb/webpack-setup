@@ -1,7 +1,7 @@
 import { wizard } from './wizard';
 // import { barbarian } from './barbarian';
 
-// todo: testing both require and import are working and it's 
+// todo: testing both require and import are working and it's w/o addition of the babel in package json
 const {barbarian} = require('./barbarian');
 
 export const getClasses = () => {

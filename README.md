@@ -16,5 +16,10 @@ simple webpack5 setUp example
 13. We can then add a "build script" as well in the package json to run our local webpack.
 14. Important !!: till now require and import are working w/o babel, since webpack is able to do the transpiling for them.
 15. Next we are adding babel so as to support the generated main.js to run on the older browsers as well.
-16. 
+16. @babel/core , @babel/preset-env, babel-loader is now added primarily here.
+17. @babel/core : is the core of babel
+18. @babel/preset-env : latest browser support, backward compatibility, reasonal js usage on web
+19. babel-loader : is going to handle operations like CSS loader inclusion 
+20. after the inclusion of the webpack in local if we do npm run build then output in the dist/main will be little bit different. Now this is not having any arrow function and also this is now compatible with old browsers.
+21. 
     
